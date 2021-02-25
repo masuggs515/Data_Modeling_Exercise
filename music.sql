@@ -19,13 +19,6 @@ id SERIAL PRIMARY KEY,
 producer TEXT NOT NULL
 );
 
-CREATE TABLE artists_producers
-(
-id SERIAL PRIMARY KEY,
-artist INTEGER REFERENCES artists,
-producer INTEGER REFERENCES producers
-);
-
 
 CREATE TABLE songs
 (
